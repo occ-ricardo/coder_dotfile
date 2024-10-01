@@ -24,6 +24,6 @@ StartupWMClass=jetbrains-idea-ce
 StartupNotify=true' > /home/coder/.local/share/applications/jetbrains-idea-ce.desktop
 
 # Alias
-echo 'alias ll="ls -l"
-alias la="ls -la"
-alias cls='clear && echo -en "\e[3J"'' > /home/coder/.bashrc
+echo 'alias ll="ls -l"' >> /home/coder/.bashrc
+echo 'alias la="ls -la"' >> /home/coder/.bashrc
+echo 'alias cls="clear && echo -en \e[3J"' >> /home/coder/.bashrc
