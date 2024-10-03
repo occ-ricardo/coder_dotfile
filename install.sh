@@ -1,15 +1,23 @@
 #!/bin/bash
 
+
+### UPDATES
 # Update Ubuntu repository
 sudo apt update
 sudo apt -y full-upgrade
 sudo apt autoremove
 
+
+### INSTALLS
 # Install nano
 sudo apt install nano
+# Install ping
+sudo apt install iputils-ping
 # Install dbeaver-ce
 sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.1_amd64.deb
 
+
+### ICONS
 # Create IntelliJ IDEA CE desktop icon
 echo '[Desktop Entry]
 Version=1.0
@@ -23,7 +31,8 @@ Terminal=false
 StartupWMClass=jetbrains-idea-ce
 StartupNotify=true' > /home/coder/.local/share/applications/jetbrains-idea-ce.desktop
 
-# Alias
+
+### ALIAS
 echo 'if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
