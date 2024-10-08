@@ -42,3 +42,10 @@ fi' > /home/coder/.profile
 echo 'alias ll="ls -l"' > /home/coder/.bashrc
 echo 'alias la="ls -la"' >> /home/coder/.bashrc
 echo 'alias cls="clear && echo -en \e[3J"' >> /home/coder/.bashrc
+
+
+### BASH AUTOCOMPLETION
+sudo apt install bash-completion
+echo 'if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi' >> /home/coder/.bashrc
