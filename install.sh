@@ -14,7 +14,7 @@ sudo apt install nano
 # Install ping
 sudo apt install iputils-ping
 # Install dbeaver-ce
-sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.1_amd64.deb
+sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
 
 
 ### ICONS
