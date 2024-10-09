@@ -13,7 +13,7 @@ sudo apt autoremove
 sudo apt install nano
 # Install ping
 sudo apt install iputils-ping
-# Install dbeaver-ce
+# Install DBeaver Community
 sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
 
 
@@ -39,9 +39,13 @@ echo 'if [ -n "$BASH_VERSION" ]; then
         . "$HOME/.bashrc"
     fi
 fi' > /home/coder/.profile
-echo 'alias ll="ls -l"' > /home/coder/.bashrc
+echo '### NAVIGATION' > /home/coder/.bashrc
+echo 'alias ll="ls -l"' >> /home/coder/.bashrc
 echo 'alias la="ls -la"' >> /home/coder/.bashrc
 echo 'alias cls="clear && echo -en \e[3J"' >> /home/coder/.bashrc
+echo '' >> /home/coder/.bashrc
+echo '### KUBERNETES' >> /home/coder/.bashrc
+echo 'alias k="kubectl"' >> /home/coder/.bashrc
 
 
 ### BASH AUTOCOMPLETION
