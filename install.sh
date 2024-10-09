@@ -46,6 +46,8 @@ echo 'alias cls="clear && echo -en \e[3J"' >> /home/coder/.bashrc
 echo '' >> /home/coder/.bashrc
 echo '### KUBERNETES' >> /home/coder/.bashrc
 echo 'alias k="kubectl"' >> /home/coder/.bashrc
+echo 'alias pods="kubectl get pods"' >> /home/coder/.bashrc
+echo 'alias svc="kubectl get svc"' >> /home/coder/.bashrc
 
 
 ### BASH AUTOCOMPLETION
