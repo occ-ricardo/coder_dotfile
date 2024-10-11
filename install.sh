@@ -18,8 +18,8 @@ if [ -f /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb ]; then
     sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
 fi
 # Install MongoDB Compass
-if [ -f /home/coder/Downloads/mongodb-mongosh_2.3.2_amd64.deb ]; then
-    sudo dpkg -i /home/coder/Downloads/mongodb-mongosh_2.3.2_amd64.deb
+if [ -f /home/coder/Downloads/mongodb-compass_1.44.4_amd64.deb ]; then
+    sudo dpkg -i /home/coder/Downloads/mongodb-compass_1.44.4_amd64.deb
 fi
 
 
