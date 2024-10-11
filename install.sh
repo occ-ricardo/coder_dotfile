@@ -14,7 +14,13 @@ sudo apt install nano
 # Install ping
 sudo apt install iputils-ping
 # Install DBeaver Community
-sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
+if [ -f /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb ]; then
+    sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
+fi
+# Install MongoDB Compass
+if [ -f /home/coder/Downloads/mongodb-mongosh_2.3.2_amd64.deb ]; then
+    sudo dpkg -i /home/coder/Downloads/mongodb-mongosh_2.3.2_amd64.deb
+fi
 
 
 ### ICONS
