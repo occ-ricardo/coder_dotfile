@@ -4,23 +4,21 @@
 ### UPDATES
 # Update Ubuntu repository
 sudo apt update
-sudo apt -y full-upgrade
-sudo apt autoremove
+#sudo apt -y full-upgrade
+#sudo apt autoremove
 
 
 ### INSTALLS
-# Install nano
-sudo apt install nano
-# Install ping
-sudo apt install iputils-ping
+# Install nano and ping
+sudo apt install nano iputils-ping
 # Install DBeaver Community
-if [ -f /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb ]; then
-    sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
-fi
+#if [ -f /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb ]; then
+#    sudo dpkg -i /home/coder/Downloads/dbeaver-ce_24.2.2_amd64.deb
+#fi
 # Install MongoDB Compass
-if [ -f /home/coder/Downloads/mongodb-compass_1.44.4_amd64.deb ]; then
-    sudo dpkg -i /home/coder/Downloads/mongodb-compass_1.44.4_amd64.deb
-fi
+#if [ -f /home/coder/Downloads/mongodb-compass_1.44.4_amd64.deb ]; then
+#    sudo dpkg -i /home/coder/Downloads/mongodb-compass_1.44.4_amd64.deb
+#fi
 
 
 ### ICONS
@@ -60,7 +58,7 @@ echo 'alias s="skaffold"' >> /home/coder/.bashrc
 
 
 ### BASH AUTOCOMPLETION
-sudo apt install bash-completion
-echo 'if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi' >> /home/coder/.bashrc
+#sudo apt install bash-completion
+#echo 'if [ -f /etc/bash_completion ]; then
+#    . /etc/bash_completion
+#fi' >> /home/coder/.bashrc
