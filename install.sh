@@ -23,17 +23,17 @@ sudo apt install nano iputils-ping
 
 ### ICONS
 # Create IntelliJ IDEA CE desktop icon
-echo '[Desktop Entry]
-Version=1.0
-Type=Application
-Name=IntelliJ IDEA Community Edition
-Icon=/opt/idea/bin/idea.svg
-Exec="/opt/idea/bin/idea.sh" %f
-Comment=Capable and Ergonomic IDE for JVM
-Categories=Development;IDE;
-Terminal=false
-StartupWMClass=jetbrains-idea-ce
-StartupNotify=true' > /home/coder/.local/share/applications/jetbrains-idea-ce.desktop
+# echo '[Desktop Entry]
+# Version=1.0
+# Type=Application
+# Name=IntelliJ IDEA Community Edition
+# Icon=/opt/idea/bin/idea.svg
+# Exec="/opt/idea/bin/idea.sh" %f
+# Comment=Capable and Ergonomic IDE for JVM
+# Categories=Development;IDE;
+# Terminal=false
+# StartupWMClass=jetbrains-idea-ce
+# StartupNotify=true' > /home/coder/.local/share/applications/jetbrains-idea-ce.desktop
 
 
 ### ALIAS
@@ -52,6 +52,7 @@ echo '### KUBERNETES' >> /home/coder/.bashrc
 echo 'alias k="kubectl"' >> /home/coder/.bashrc
 echo 'alias pods="kubectl get pods"' >> /home/coder/.bashrc
 echo 'alias svc="kubectl get svc"' >> /home/coder/.bashrc
+echo 'alias pvc="kubectl get pvc"' >> /home/coder/.bashrc
 echo '' >> /home/coder/.bashrc
 echo '### SKAFFOLD' >> /home/coder/.bashrc
 echo 'alias s="skaffold"' >> /home/coder/.bashrc
