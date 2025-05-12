@@ -37,25 +37,32 @@ sudo apt install nano iputils-ping
 
 
 ### ALIAS
-echo 'if [ -n "$BASH_VERSION" ]; then
+# .profile setup
+cat <<'EOF' > /home/coder/.profile
+if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
         . "$HOME/.bashrc"
     fi
-fi' > /home/coder/.profile
-echo '### NAVIGATION' > /home/coder/.bashrc
-echo 'alias ll="ls -l"' >> /home/coder/.bashrc
-echo 'alias la="ls -la"' >> /home/coder/.bashrc
-echo 'alias cls="clear && printf '\''\e[3J'\''"' >> /home/coder/.bashrc
-echo '' >> /home/coder/.bashrc
-echo '### KUBERNETES' >> /home/coder/.bashrc
-echo 'alias k="kubectl"' >> /home/coder/.bashrc
-echo 'alias pods="kubectl get pods"' >> /home/coder/.bashrc
-echo 'alias svc="kubectl get svc"' >> /home/coder/.bashrc
-echo 'alias pvc="kubectl get pvc"' >> /home/coder/.bashrc
-echo '' >> /home/coder/.bashrc
-echo '### SKAFFOLD' >> /home/coder/.bashrc
-echo 'alias s="skaffold"' >> /home/coder/.bashrc
+fi
+EOF
+
+# .bashrc setup
+cat <<'EOF' > /home/coder/.bashrc
+### NAVIGATION
+alias ll="ls -l"
+alias la="ls -la"
+alias cls="clear && printf '\e[3J'"
+
+### KUBERNETES
+alias k="kubectl"
+alias pods="kubectl get pods"
+alias svc="kubectl get svc"
+alias pvc="kubectl get pvc"
+
+### SKAFFOLD
+alias s="skaffold"
+EOF
 
 
 ### BASH AUTOCOMPLETION
