@@ -46,7 +46,7 @@ fi' > /home/coder/.profile
 echo '### NAVIGATION' > /home/coder/.bashrc
 echo 'alias ll="ls -l"' >> /home/coder/.bashrc
 echo 'alias la="ls -la"' >> /home/coder/.bashrc
-echo 'alias cls="clear && echo -en \e[3J"' >> /home/coder/.bashrc
+echo 'alias cls="clear && printf '\''\e[3J'\''"' >> /home/coder/.bashrc
 echo '' >> /home/coder/.bashrc
 echo '### KUBERNETES' >> /home/coder/.bashrc
 echo 'alias k="kubectl"' >> /home/coder/.bashrc
