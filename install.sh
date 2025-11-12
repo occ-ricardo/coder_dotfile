@@ -40,6 +40,9 @@ EOF
 
 # ALIAS step 2 - .bashrc setup
 cat <<'EOF' > /home/coder/.bashrc
+# SPRING BOOT ENVIRONMENT
+SPRING_APP_ENV=dev
+
 ### NAVIGATION
 alias ll="ls -l"
 alias la="ls -la"
