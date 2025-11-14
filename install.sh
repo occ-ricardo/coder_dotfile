@@ -26,6 +26,13 @@
 
 
 ###########################################
+### ENVIRONMENT VARIABLES
+###########################################
+sudo sh -c 'printf "\n# SPRING BOOT ENVIRONMENT\nSPRING_APP_ENV=dev\n" >> /etc/environment'
+
+
+
+###########################################
 ### BASH
 ###########################################
 # ALIAS step 1 - .profile setup to invoke .bashrc
@@ -40,9 +47,6 @@ EOF
 
 # ALIAS step 2 - .bashrc setup
 cat <<'EOF' > /home/coder/.bashrc
-# SPRING BOOT ENVIRONMENT
-SPRING_APP_ENV=dev
-
 ### NAVIGATION
 alias ll="ls -l"
 alias la="ls -la"
