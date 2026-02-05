@@ -62,7 +62,7 @@ alias pvc="kubectl get pvc"
 alias s="skaffold"
 
 ### WATCH
-alias w="watch kubectl get pods"
+alias wp="watch kubectl get pods"
 
 ### JAVA
 jv()  { java -version; }
