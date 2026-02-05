@@ -60,6 +60,30 @@ alias pvc="kubectl get pvc"
 
 ### SKAFFOLD
 alias s="skaffold"
+
+### JAVA
+jv()  { java -version; }
+jvv() { java -XshowSettings:all -version; }  # verbose version of -version
+j11() {
+  sudo update-alternatives --set java  /usr/lib/jvm/java-11-openjdk-amd64/bin/java  >/dev/null
+  sudo update-alternatives --set javac /usr/lib/jvm/java-11-openjdk-amd64/bin/javac >/dev/null
+  java -version
+}
+j17() {
+  sudo update-alternatives --set java  /usr/lib/jvm/java-17-openjdk-amd64/bin/java  >/dev/null
+  sudo update-alternatives --set javac /usr/lib/jvm/java-17-openjdk-amd64/bin/javac >/dev/null
+  java -version
+}
+j21() {
+  sudo update-alternatives --set java  /usr/lib/jvm/java-21-openjdk-amd64/bin/java  >/dev/null
+  sudo update-alternatives --set javac /usr/lib/jvm/java-21-openjdk-amd64/bin/javac >/dev/null
+  java -version
+}
+j25() {
+  sudo update-alternatives --set java  /usr/lib/jvm/java-25-openjdk-amd64/bin/java  >/dev/null
+  sudo update-alternatives --set javac /usr/lib/jvm/java-25-openjdk-amd64/bin/javac >/dev/null
+  java -version
+}
 EOF
 
 # AUTOCOMPLETION
